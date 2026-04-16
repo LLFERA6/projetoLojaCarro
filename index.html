@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loja de carros</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <div class="conteiner">
-       <header class="cabecalho">
-        <h3>cadastre seu veiculo para vender mais rapido</h3>
-       </header>
-       <div class="form-container">
+    <div class="conteiner">
+        <header class="cabecalho">
+            <h3>cadastre seu veiculo para vender mais rapido</h3>
+        </header>
+        <div class="form-container">
             <div class="form-header">
                 <p>Formulário</p>
-             </div>
-                  <div class="form-body">
-                        <h1 class="form-titulo">Venda facil seu carro</h1>
-                        <p>Descreva as caracteristicas do seu carro e marque os opcionais que ele precisa</p>
-                  </div>
-       </div>
+            </div>
+            <div class="form-body">
+                <h1 class="form-titulo">Venda facil seu carro</h1>
+                <p>Descreva as caracteristicas do seu carro e marque os opcionais que ele precisa</p>
+                <form>
+                   <div class="caixaInputs">
+                    <label for="title">Titulo do anuncio <span class="campo-obrigatoria">*</span></label>
+                    <input type="text" name="title" id="title" class="block" placeholder="digite um titulo" minlength="1" maxlength="30" required>
+                   </div>
 
-     </div>
+                    <div class="caixaInputs">
+                    <label for="preco">preço<span class="campo-obrigatoria">*</span></label>
+                    <input type="number" name="preco" id="preco" class="block" placeholder="$ digite Preço" required>
+                   </div>
+
+                   <div class="caixaInputs">
+                    <label for="descricao">Descriçâo</label>
+                    <textarea name="descricao" id="descricao" class="block" placeholder="Faça a descriçâo do seu veiculo aqui"></textarea>
+                    
+
+                   </div>
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
