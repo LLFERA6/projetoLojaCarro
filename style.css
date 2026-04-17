@@ -71,6 +71,10 @@ body {
  }
  .caixaInputs{
    margin-bottom: 35px;
+
+ }
+ .block{
+   display: block;
    
  }
 
