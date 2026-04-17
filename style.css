@@ -52,5 +52,7 @@ body {
     text-align: center;
     margin: 0% auto;
     text-transform: uppercase;
+    line-height: 45px;
+    height: 45px;
  }
 
