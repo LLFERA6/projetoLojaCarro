@@ -1,6 +1,6 @@
 const { createElement } = require("react");
 
-function salvarCarro(event){
+function salvarCarro(event){ 
     //impedir de recarga da pagina
     event.preventDefalt();
     let titulo = document.getElementById('title');
@@ -19,5 +19,23 @@ function salvarCarro(event){
     card.style.border = "1px solid #ccc";
     card.style.padding = "10px";
     card.style.marginBottom = "10px";
-    
+
+    card.InnerHTML = '
+     <h3>${titulo}<h3>
+     <p> <strong>Preço:</strong> R$ {preco}</p>;
+     <p> <strong>Marca:</strong> R$ {marca}</p>;
+     <p> <strong>Modelo:</strong> R$ {modelo}</p>;
+     <p> <strong>Câmbio:</strong> R$ {cambio}</p>;
+    ';
+     lista.appenchild(card);
+
+     let carro ={ 
+        titulo,
+        preco,
+        marca,
+        modelo,       
+        cambio  
+  };
+   let carros = JSON.parse();
+   
 }
