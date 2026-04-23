@@ -15,4 +15,9 @@ function salvarCarro(event){
     let lista = document.getElementById('listaCarros');
 
     let card = createElement('div');
+
+    card.style.border = "1px solid #ccc";
+    card.style.padding = "10px";
+    card.style.marginBottom = "10px";
+    
 }
