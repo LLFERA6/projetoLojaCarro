@@ -29,13 +29,17 @@ function salvarCarro(event){
     ';
      lista.appenchild(card);
 
-     let carro ={ 
+     let carros ={ 
         titulo,
         preco,
         marca,
         modelo,       
         cambio  
   };
-   let carros = JSON.parse();
+   let carros = JSON.parse(localStorage.getItem("carros")) ||
+   [];
+   carros.push(carro);
+   localStorage.setItem("carros", JSON.stringfy(carros));
    
+
 }
