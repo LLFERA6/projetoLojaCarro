@@ -1,4 +1,4 @@
-const { createElement } = require("react");
+
 
 function salvarCarro(event){ 
     //impedir de recarga da pagina
@@ -31,4 +31,22 @@ function salvarCarro(event){
    document.querySelector("form").reset();
 
 
+}
+
+function adicionarNaTela(carro){
+   let lista = document.getElementById('listarCarros');
+   let card = document.createElement('div')
+   card.classList.add('card');
+   
+   card.innerHTML`
+   <h3>${carro.titulo}</h3>
+   <p><>strong>Preço:</strong> R$ ${carro.preco}</p>
+   <p><>strong>Marca:</strong> R$ ${carro.marca}</p>
+   <p><>strong>Modelo:</strong> R$ ${carro.modelo}</p>
+   <p><>strong>Câmbio:</strong> R$ ${carro.cambio}</p>
+   
+   `  
+   lista.appendChild(card);
+   
+   
 }
