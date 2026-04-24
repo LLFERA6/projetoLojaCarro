@@ -20,16 +20,10 @@ function salvarCarro(event){
     card.style.padding = "10px";
     card.style.marginBottom = "10px";
 
-    card.InnerHTML = '
-     <h3>${titulo}<h3>
-     <p> <strong>Preço:</strong> R$ {preco}</p>;
-     <p> <strong>Marca:</strong> R$ {marca}</p>;
-     <p> <strong>Modelo:</strong> R$ {modelo}</p>;
-     <p> <strong>Câmbio:</strong> R$ {cambio}</p>;
-    ';
+    
      lista.appenchild(card);
 
-     let carros ={ 
+     let carro ={ 
         titulo,
         preco,
         marca,
