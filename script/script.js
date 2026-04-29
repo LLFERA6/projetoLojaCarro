@@ -49,3 +49,10 @@ function adicionarNaTela(carro){
 
    
 }
+
+window.onload = function () {
+   let carros = JSON.parse(localStorage.getItem("carros")) || [];
+   carros.forEach(carro => {
+      adicionarNaTela(carro);
+   });
+}
