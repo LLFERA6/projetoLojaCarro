@@ -42,7 +42,9 @@ function adicionarNaTela(carro){
    <p><strong>Marca:</strong> R$ ${carro.marca}</p>
    <p><strong>Modelo:</strong> R$ ${carro.modelo}</p>
    <p><strong>Câmbio:</strong> R$ ${carro.cambio}</p>
-   `;  
+   `;
+   
+   
    lista.appendChild(card);
 
    
