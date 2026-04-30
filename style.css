@@ -103,9 +103,9 @@ body {
 hr {
   margin-top: 20px;
   height: 3px;
-  background: to right, transparent, #673ab7, transparent;
+  background: linear-gradient(to right, transparent, #673ab7, transparent);
   margin: 20px 0;
   border: none;
-  
+
 }
 
